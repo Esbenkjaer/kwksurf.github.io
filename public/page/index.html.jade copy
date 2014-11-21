@@ -1,0 +1,136 @@
+---
+title: 'Forside'
+layout: default
+scriptExtra: /js/map-kwk.js
+---
+
+//- TODO create a nice image header for the frontpage
+//- .hero-unit(style="background-image: url(/images/kwk_header.png); background-repeat: no-repeat; color: white;")
+//-   h1(style="color: white;") Kolding Windsurfing Klub
+#home-hero-box.hero-unit
+	h1 Kolding Windsurfing Klub
+	p mød os i klubhuset i Rebæk 
+		a.btn.btn-primary.btn-large(data-toggle="modal", href="#newMemberModal") Bliv medlem
+
+#newMemberModal.modal.hide.fade
+	.modal-header
+		a.close(data-dismiss="modal") x
+		h2 Bliv medlem af KWK
+	.modal-body
+		!= include('./about/_new-member-content')
+	.modal-footer
+		a.btn(href="#", data-dismiss="modal") Luk
+
+
+.row(style="margin-top: 1em")
+	.span12
+		ul.thumbnails.frontpage-boxes
+			li.span3
+				.thumbnail
+					a(href="/page/weather", title="Vind og vejr")
+						img(src="http://servlet.dmi.dk/bv/servlet/bvImage?stat=1627&param=wind",
+							title="Vindmåling fra Kolding windsurfing klubs vejrstation")
+					.caption
+						h5 Live vind måling fra klubhuset
+						p Vindmåling fra Kolding windsurfing klubs vejrstation
+
+			li.span3
+				.thumbnail
+					a(href="http://www.facebook.com/groups/17993003105")
+						img(alt="", src="/images/kwk-facebook.png")
+					.caption
+						h5 Facebook gruppe
+						p Meld dig ind i 
+							a(href="http://www.facebook.com/groups/17993003105") kwk's facebook gruppe
+							, så du kan følge med i hvor der skal sejles, hvem der tager afsted, hvem der har udstyr til salg osv.
+			li.span3
+				.thumbnail
+					//<iframe width="209" height="142" src="http://www.youtube.com/embed/PMVe48-Vn-g" frameborder="0" allowfullscreen></iframe>
+					a(href="http://www.youtube.com/user/Koldingwindsurfklub?ob=0&feature=results_main")
+						img(alt="", src="/images/kwk-youtube.png")
+					.caption
+						h5 Youtube kanal
+						p Se videoer fra klubben på vores 
+							a(href="http://www.youtube.com/user/Koldingwindsurfklub?ob=0&feature=results_main") youtube kanal
+							.
+
+			li.span3
+				.thumbnail
+					a(href="http://dl.dropbox.com/u/65342965/www/KWKbrochure.pdf", target="_blank")
+						img(alt="", src="http://dl.dropbox.com/u/65342965/www/folder_small.png")
+
+					.caption
+						h5 KWK Info folder
+						p Print vores 
+							a(href="http://dl.dropbox.com/u/65342965/KWKbrochure.pdf", target="_blank") folder om Kolding Windsurfing Klub
+							|  , og giv den til dine venner.
+
+.row
+	.span6
+		h2 Klubhuset ved Rebæk strand
+		#map_canvas
+	
+
+		h2#calender Det sker i KWK
+		p
+			.thumbnail
+				<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=uh2iel1o8bksenmmqa0qfa4hok%40group.calendar.google.com&amp;color=%23A32929&amp;ctz=Europe%2FCopenhagen" style=" border-width:0 " width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+		p
+			a.btn.btn-primary(data-toggle="modal", href="#smartphoneModal") &raquo;KWK-kalender-smartphone-guide&laquo;
+		#smartphoneModal.modal.hide.fade
+			.modal-header
+				a.close(data-dismiss="modal") x
+				h2 &raquo;KWK-kalender-smartphone-guide&laquo;
+			.modal-body
+				p Sådan får du Kolding Windsurfing Klubs arrangementskalender på din smartphone, så den opdaterer helt automatisk :-)
+				p
+					span.label.label-info Google konto krævet
+					|  Du skal have et login til google for at kunne abonnere på arrangementskalenderen.
+				ol
+					li Log ind på din google konto / gmail på din computer.
+					li Åbn KWKs hjemmedside og klik på + i bunden af kalenderen, for at tilføje til din kalender.
+					li Klik OK til at tilføje til din google kalender.
+						| Nu opdateres KWK kalenderen helt automatisk med din google kalender på din computer.
+					li Indstil din smartphone til at bruge din google konto.
+					li Vælg KWK kalender i instillingerne for kalenderen på din smartphone
+				p Nu vises alle dine egne google begivenheder, side om side med begivenheder fra KWK helt automatisk :-)
+
+			.modal-footer
+				a.btn(href="#", data-dismiss="modal") Luk
+
+
+	.span6
+		h2 Velkommen i Kolding Windsurfing Klub
+		p.
+			Kolding Windsurfing Klub blev stiftet i 1992. Det har siden klubbens start, været vort formål at udbrede sporten
+			og fordre unge talenter. Surfskolens dygtige DS uddannede instruktører, underviser over 100 elever hver
+			sommer, det vil sige at vi stadig er en af de førende surfskoler i landet. Vi har Klubaften med surfskole 2 gange
+			ugentligt i sommerhalvåret, hvor elever i alle aldersklasser, begyndere som øvede, bliver undervist efter Dansk
+			Sejlunion’ s surfskole kursussæt windsurfer 1 og windsurfer 2.
+			Hvis du er i tvivl om windsurfing er noget for dig, så kom forbi klubben på klubaften, hvor du gratis kan prøve at
+			windsurfe 1. gang.
+			Hele sommeren er fyldt med aktiviteter i Kolding windsurfing klub, og medlemmerne må også bruge klubbens
+			område på andre dage end på klubaftener.
+
+		h2 I samarbejde med Dansk Sejlunion
+		p.
+			Kolding Windsurfing Klub er medlem af Dansk Sejlunion og har et årelangt samarbejde, specielt målrettet
+			mod aktiviteter og tilbud til børn og unge. Og blev i 2007, som første windsurfing klub i Danmark,
+			af Dansk Sejlunion udnævnt til Ungdomsvenlig Sejlklub, samt i 2011-2012 udvalgt som eneste windsurfing klub,
+			i et strategisk projekt, med fokus på fastholdelse af unge mellem 16-25 år. Projektet kaldes et Fyrtårnsprojekt
+			og Kolding windsurfing klub er sammen med 4 sejlklubber, med til at vise vejen for sejlsporten i Danmark.
+		h2 Surfskole
+		p Der foregår altid spændende aktiviteter i surfskolen. KWK tilbyde for øjeblikket tre forskellige hold.
+
+		//- TODO vis kursusbeskrivelserne i en facebox
+		p 
+			a(href="/page/activities", title="Surfskole - den blå legeplads").label.label-info Den blå legeplads
+			|  Er stedet hvor de mindste kan prøver kræfter med havet sammen med deres forældre.
+		p
+			a(href="/page/activities", title="Surfskole - Windsurfer 1").label.label-success Begynderkursus
+			|  Er for dig der lige er startet på windsurfing.
+		p 
+			a(href="/page/activities", title="Surfskole - Windsurfer 2").label.label-warning Videregående
+			|  Er træning for dig der allerede har gennemgået begynderkursus og har mod på at lære mere.
+
+

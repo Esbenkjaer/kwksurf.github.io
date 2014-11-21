@@ -1,8 +1,7 @@
 {
-  "basicAuth": "stou:lagkage",
   "globals": {
-      "title": "Ali Baba’s blog",
-      "author": "Ali Baba",
-      "description": "A secret blog"
+      "title": "kwk.dk",
+      "author": "Rasmus Stoguaard",
+      "description": "Kolding Windsurfing Klub"
   }
 }

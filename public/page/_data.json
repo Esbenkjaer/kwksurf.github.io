@@ -1,0 +1,15 @@
+{
+	"index" : {
+		"title": "Forside"
+		, "scriptExtra": "/js/map-kwk.js"
+	}
+	, "activities" : {"title": "Surfskole og aktiviteter"}
+	, "about" : {"title": "Om Klubben"}
+	, "weather" : {	"title": "Vind og vejr"	}
+
+	, "webcam" : { "title": "Webcam" }
+	, "webcam-alt" :{
+		"title": "Webcam alternativ version"
+		, "scriptExtra": "/js/webcam-refresh.js"
+	}
+}
