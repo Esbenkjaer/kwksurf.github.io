@@ -1,7 +1,8 @@
 {
-  "globals": {
-      "title": "kwk.dk",
-      "author": "Rasmus Stoguaard",
-      "description": "Kolding Windsurfing Klub"
-  }
+	"globals": {
+		"title": "kwk.dk"
+		, "author": "Rasmus Stoguaard"
+		, "description": "Kolding Windsurfing Klub"
+		, "keywords": "Windsurfing, Kolding, Forening, Rebæk"
+	}
 }
