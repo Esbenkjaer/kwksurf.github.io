@@ -16,14 +16,14 @@
 							h1 Kontaktinformation
 				.row
 					.span4
-						include ./_bestyrelse
+						!= partial("_bestyrelse")
 					.span4
-						!= partial("./_udvalg")
+						!= partial("_udvalg")
 					.span4
-						include ./_keyholders
+						!= partial("_keyholders")
 
 			#vedtaegter.tab-pane
 				section
 					.page-header
 						h1 Vedtægter
-					!=partial('./_vedtaegter')
+					!= partial("_vedtaegter")
