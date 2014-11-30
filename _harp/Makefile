@@ -5,7 +5,7 @@ all: server
 deploy: build-production
 
 server:
-	harp server _harp
+	harp server
 
 build-production:
-	harp compile _harp .
+	harp compile ../
