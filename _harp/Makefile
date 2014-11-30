@@ -2,10 +2,11 @@
 
 all: server
 
-deploy: build-production
+build: build-production
 
 server:
 	harp server
 
 build-production:
-	harp compile ../
+	harp compile ./ ../
+	cp README.md ../
