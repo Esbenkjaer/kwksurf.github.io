@@ -1,1 +1,1 @@
-web: node _harp/server.js
+web: node server.js
