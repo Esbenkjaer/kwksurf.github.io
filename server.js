@@ -1,1 +1,0 @@
-require('harp').server(__dirname + "/_harp", { port: process.env.PORT || 5000 })
