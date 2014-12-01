@@ -1,29 +1,4 @@
 .row
 	.span12
-		ul.nav.nav-pills
-			li.active: a(href="#history", data-toggle="tab") Generel information
-			li: a(href="#contacts", data-toggle="tab") Kontaktinformation
-			li: a(href="#vedtaegter", data-toggle="tab") Vedtægter
+		include ./_history
 
-		.tab-content
-			#history.tab-pane.active
-				include ./_history
-
-			#contacts.tab-pane
-				.row
-					.span12
-						.page-header
-							h1 Kontaktinformation
-				.row
-					.span4
-						!= partial("_bestyrelse")
-					.span4
-						!= partial("_udvalg")
-					.span4
-						!= partial("_keyholders")
-
-			#vedtaegter.tab-pane
-				section
-					.page-header
-						h1 Vedtægter
-					!= partial("_vedtaegter")

@@ -1,3 +1,6 @@
+<div class="page-header">
+<h1>Vedtægter</h1>
+</div>
 
 ## § 1 Klubbens navn og hjemsted
 
