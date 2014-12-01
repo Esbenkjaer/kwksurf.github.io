@@ -7,20 +7,5 @@ script.
 
 	var propertyId = 'UA-24508798-2';
 
-	var hasConsole = (typeof console !== 'undefined');
-	if(/localhost/.test(window.location.hostname)) {
-
-		var disableStr = 'ga-disable-' + propertyId;
-
-		if(hasConsole){
-			console.log("Running non-production google analytics replacement now"); 
-			ga = function(arg) { 
-				console.log("ga:", arguments);
-			};
-		} else {
-			window[disableStr] = true;
-		}
-	}
-
 	ga('create', propertyId, 'auto');
 	ga('send', 'pageview');
