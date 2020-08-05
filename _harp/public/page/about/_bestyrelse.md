@@ -2,7 +2,7 @@
 
 #### Formand
 
-Michael Nexø, 75515111, nexoe@mail.dk
+Michael Nexø, 24663858, nexoe@mail.dk
 
 #### Bestyrelsesmedlemmer
 

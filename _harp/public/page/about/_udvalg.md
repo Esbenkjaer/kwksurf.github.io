@@ -29,12 +29,8 @@ Klaus Døssing 51526353, kladoe1972@gmail.com
 Jan Sparke, 50503425, jan.adelhard@sparke.dk
 
 #### Sponsor/PR udvalg
-Michael Nexø, 75515111, nexoe@mail.dk
+Michael Nexø, 24663858, nexoe@mail.dk
 Peter Brønsholm, 30682085, brondsholm@gmail.com
 
 #### Ungdomsleder
 Jakob Jørgensen, 60225439, jakob3529@live.dkm
-
-#### Webmaster
-Rasmus Stougaard, 61677868, rasmus.stougaard@gmail.com
-
