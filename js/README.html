@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>kwk.dk</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Kolding Windsurfing Klub"><meta name="keywords" content="Windsurfing, surf, SUP, stand up paddle, Kolding, surfskole, instruktion, den blå lejeplads"><meta name="author" content="Rasmus Stoguaard"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/jquery.googleslides.css"><!--if lt IE 9script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>kwk.dk</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Kolding Windsurfing Klub"><meta name="keywords" content="Windsurfing, surf, SUP, stand up paddle, Kolding, surfskole, instruktion, den blå lejeplads"><meta name="author" content="Rasmus Stougaard"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/jquery.googleslides.css"><!--if lt IE 9script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
 --></head><body data-spy="scroll" data-target=".subnav" data-offset="50"><!--if lt IE 7p.browsehappy
 	|You are using an 
 	strong
@@ -12,28 +12,48 @@ title="Se vores billedgalleri") Billeder--><li><a href="http://www.youtube.com/u
 <hr>
 <h3>DATA-ATTRIBUTE API</h3><p>We believe you should be able to use all plugins provided by Bootstrap purely through the markup API without writing a single line of javascript.</p>
 <p>We acknowledge that this isn&#39;t always the most performant and sometimes it may be desirable to turn this functionality off altogether. Therefore, as of 2.0 we provide the ability to disable the data attribute API by unbinding all events on the body namespaced with <code>&#39;data-api&#39;</code>. This looks like this:</p>
-<pre><code>$(&#39;body&#39;).off(&#39;.data-api&#39;)</code></pre><p>To target a specific plugin, just include the plugins name as a namespace along with the data-api namespace like this:</p>
-<pre><code>$(&#39;body&#39;).off(&#39;.alert.data-api&#39;)</code></pre><hr>
+<pre><code>$(&#39;body&#39;).off(&#39;.data-api&#39;)
+</code></pre>
+<p>To target a specific plugin, just include the plugins name as a namespace along with the data-api namespace like this:</p>
+<pre><code>$(&#39;body&#39;).off(&#39;.alert.data-api&#39;)
+</code></pre>
+<hr>
 <h3>PROGRAMATIC API</h3><p>We also believe you should be able to use all plugins provided by Bootstrap purely through the JS API.</p>
 <p>All public APIs should be single, chainable methods, and return the collection acted upon.</p>
-<pre><code>$(&quot;.btn.danger&quot;).button(&quot;toggle&quot;).addClass(&quot;fat&quot;)</code></pre><p>All methods should accept an optional options object, a string which targets a particular method, or null which initiates the default behavior:</p>
+<pre><code>$(&quot;.btn.danger&quot;).button(&quot;toggle&quot;).addClass(&quot;fat&quot;)
+</code></pre>
+<p>All methods should accept an optional options object, a string which targets a particular method, or null which initiates the default behavior:</p>
 <pre><code>$(&quot;#myModal&quot;).modal() // initialized with defaults
 $(&quot;#myModal&quot;).modal({ keyboard: false }) // initialized with now keyboard
-$(&quot;#myModal&quot;).modal(&#39;show&#39;) // initializes and invokes show immediately afterqwe2</code></pre><hr>
+$(&quot;#myModal&quot;).modal(&#39;show&#39;) // initializes and invokes show immediately afterqwe2
+</code></pre>
+<hr>
 <h3>OPTIONS</h3><p>Options should be sparse and add universal value. We should pick the right defaults.</p>
 <p>All plugins should have a default object which can be modified to effect all instance&#39;s default options. The defaults object should be available via <code>$.fn.plugin.defaults</code>.</p>
-<pre><code>$.fn.modal.defaults = { … }</code></pre><p>An options definition should take the following form:</p>
-<pre><code>*noun*: *adjective* - describes or modifies a quality of an instance</code></pre><p>examples:</p>
+<pre><code>$.fn.modal.defaults = { … }
+</code></pre>
+<p>An options definition should take the following form:</p>
+<pre><code>*noun*: *adjective* - describes or modifies a quality of an instance
+</code></pre>
+<p>examples:</p>
 <pre><code>backdrop: true
 keyboard: false
-placement: &#39;top&#39;</code></pre><hr>
+placement: &#39;top&#39;
+</code></pre>
+<hr>
 <h3>EVENTS</h3><p>All events should have an infinitive and past participle form. The infinitive is fired just before an action takes place, the past participle on completion of the action.</p>
 <pre><code>show | shown
-hide | hidden</code></pre><hr>
+hide | hidden
+</code></pre>
+<hr>
 <h3>CONSTRUCTORS</h3><p>Each plugin should expose it&#39;s raw constructor on a <code>Constructor</code> property -- accessed in the following way:</p>
-<pre><code>$.fn.popover.Constructor</code></pre><hr>
+<pre><code>$.fn.popover.Constructor
+</code></pre>
+<hr>
 <h3>DATA ACCESSOR</h3><p>Each plugin stores a copy of the invoked class on an object. This class instance can be accessed directly through jQuery&#39;s data API like this:</p>
-<pre><code>$(&#39;[rel=popover]&#39;).data(&#39;popover&#39;) instanceof $.fn.popover.Constructor</code></pre><hr>
+<pre><code>$(&#39;[rel=popover]&#39;).data(&#39;popover&#39;) instanceof $.fn.popover.Constructor
+</code></pre>
+<hr>
 <h3>DATA ATTRIBUTES</h3><p>Data attributes should take the following form:</p>
 <ul>
 <li>data-{{verb}}={{plugin}} - defines main interaction</li>
@@ -55,7 +75,9 @@ data-toggle=&quot;dropdown&quot;
 
 data-toggle=&quot;button&quot;
 data-toggle=&quot;buttons-checkbox&quot;
-data-toggle=&quot;buttons-radio&quot;</code></pre></div></div><div class="row"><div class="span12"><div class="footer"><div class="well"><address class="kwk-address"><strong>Kolding Windsurfing Klub</strong><br>Stranden 63, Rebæk<br>6000 Kolding</address></div></div></div></div></div><script src="http://platform.twitter.com/widgets.js"></script><script src="/js/jquery.js"></script><script src="/js/google-code-prettify/prettify.js"></script><script src="/js/bootstrap-transition.js"></script><script src="/js/bootstrap-alert.js"></script><script src="/js/bootstrap-modal.js"></script><script src="/js/bootstrap-dropdown.js"></script><script src="/js/bootstrap-scrollspy.js"></script><script src="/js/bootstrap-tab.js"></script><script src="/js/bootstrap-tooltip.js"></script><script>$(document).ready(function () {
+data-toggle=&quot;buttons-radio&quot;
+</code></pre>
+</div></div><div class="row"><div class="span12"><div class="footer"><div class="well"><address class="kwk-address"><strong>Kolding Windsurfing Klub</strong><br>Stranden 63, Rebæk<br>6000 Kolding</address></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/bootstrap-transition.js"></script><script src="/js/bootstrap-alert.js"></script><script src="/js/bootstrap-modal.js"></script><script src="/js/bootstrap-dropdown.js"></script><script src="/js/bootstrap-scrollspy.js"></script><script src="/js/bootstrap-tab.js"></script><script src="/js/bootstrap-tooltip.js"></script><script>$(document).ready(function () {
 	$("[rel=tooltip]").tooltip();
 });
 
@@ -70,20 +92,7 @@ $(function () {
 	var activeTab = $('li > a[href=' + location.hash + ']');
 	activeTab && activeTab.tab('show');
 });
-</script><script src="/js/jquery.googleslides.js"></script><script>$(document).ready(function () {
-	var element = $('.slideshow').each(function(){
-		$(this).googleslides({
-			userid:'109722236261114406275', 
-			albumid: $(this).attr("id"),
-			time: 4000,
-			fadespeed: 700,
-			caption: true,
-			random: true
-		});
-		
-	});
-});
-</script><!-- TODO: Handle injecting extra scripts with harp, include all for now--><script src="/js/vendor/modernizr-2.6.2.min.js"></script><script src="/js/plugins.js"></script><script src="/js/map-kwk.js"></script><script src="/js/webcam-refresh.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+</script><!-- TODO: Handle injecting extra scripts with harp, include all for now--><script src="/js/vendor/modernizr-2.6.2.min.js"></script><script src="/js/plugins.js"></script><script src="/js/webcam-refresh.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
