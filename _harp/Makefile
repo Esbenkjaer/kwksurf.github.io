@@ -1,12 +1,10 @@
-
-
 all: server
 
 build: build-production
 
 server:
-	harp server
+	harp .
 
 build-production:
-	harp compile ./ ../
+	harp . ../
 	cp README.md ../
