@@ -61,9 +61,9 @@ html
 
 
 		//- Le javascript. Placed at the end of the document so the pages load faster 
-		script(src="http://platform.twitter.com/widgets.js")
+		//- script(src="http://platform.twitter.com/widgets.js")
 		script(src="/js/jquery.js")
-		script(src="/js/google-code-prettify/prettify.js")
+		//- script(src="/js/google-code-prettify/prettify.js")
 		script(src="/js/bootstrap-transition.js")
 		script(src="/js/bootstrap-alert.js")
 		script(src="/js/bootstrap-modal.js")
@@ -98,27 +98,27 @@ html
 				activeTab && activeTab.tab('show');
 			});
 
-		//- handle google slideshows
-		script(src="/js/jquery.googleslides.js")
-		script.
-			$(document).ready(function () {
-				var element = $('.slideshow').each(function(){
-					$(this).googleslides({
-						userid:'109722236261114406275', 
-						albumid: $(this).attr("id"),
-						time: 4000,
-						fadespeed: 700,
-						caption: true,
-						random: true
-					});
+		//- //- handle google slideshows
+		//- script(src="/js/jquery.googleslides.js")
+		//- script.
+		//- 	$(document).ready(function () {
+		//- 		var element = $('.slideshow').each(function(){
+		//- 			$(this).googleslides({
+		//- 				userid:'109722236261114406275', 
+		//- 				albumid: $(this).attr("id"),
+		//- 				time: 4000,
+		//- 				fadespeed: 700,
+		//- 				caption: true,
+		//- 				random: true
+		//- 			});
 					
-				});
-			});
+		//- 		});
+		//- 	});
 
 		// TODO: Handle injecting extra scripts with harp, include all for now
 		script(src="/js/vendor/modernizr-2.6.2.min.js")
 		script(src="/js/plugins.js")
-		script(src="/js/map-kwk.js")
+		//- script(src="/js/map-kwk.js")
 		script(src="/js/webcam-refresh.js")
 		
 		!= partial("_layout/analytics")
