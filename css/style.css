@@ -4178,9 +4178,3 @@ body {
 .thumbnail .frontpage-boxes {
   height: 270px;
 }
-#map_canvas {
-  height: 20em;
-}
-#map_canvas .gmnoprint img {
-  max-width: none;
-}
